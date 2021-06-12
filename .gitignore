@@ -1,5 +1,4 @@
-# Ignore data files for now
-data
+images/Del_2
 
 # History files
 .Rhistory
