@@ -14,3 +14,39 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle +
 summary(lm(mpg ~ vehicle_length + vehicle_weight + 
              spoiler_angle + ground_clearance + AWD,data=MechaCar_MPG))
 
+# Create linear regression for vehical_length
+model_vl <- lm(mpg~vehicle_length,MechaCar_MPG) # Create linear model.
+summary(model_vl)
+yvals <- model_vl$coefficients['vehicle_length']*MechaCar_MPG$vehicle_length +
+  model_vl$coefficients['(Intercept)'] # Determine y-axis values from linear model
+plt <- ggplot(MechaCar_MPG, aes(x=vehicle_length, y=mpg)) # Import dataset into ggplot2
+plt + geom_point(color="blue") + geom_line(aes(y=yvals), color="red") + # Plot scatter and linear model
+  labs(x="Vehicle Length", y="Fuel-Efficiency (MPG)") # add axis labels
+
+# Create linear regression for ground_clearance
+model_gc <- lm(mpg~ground_clearance,MechaCar_MPG) # Create linear model.
+summary(model_gc)
+yvals <- model_gc$coefficients['ground_clearance']*MechaCar_MPG$ground_clearance +
+  model_gc$coefficients['(Intercept)'] # Determine y-axis values from linear model
+plt <- ggplot(MechaCar_MPG, aes(x=ground_clearance, y=mpg)) # Import dataset into ggplot2
+plt + geom_point(color="blue") + geom_line(aes(y=yvals), color="red") + # Plot scatter and linear model
+  labs(x="Ground Clearance", y="Fuel-Efficiency (MPG)") # add axis labels
+#---------------------------------------------------------------------------------------------------------------------
+# Del_2.2: Import and read in the Suspension_Coil.csv file as a dataframe.
+Suspension_Coil <- read.csv(file='data/Suspension_Coil.csv',check.names = F,stringsAsFactors = F)
+head(Suspension_Coil)
+
+# Del_2.3: Create a dataframe to get mean, median, variance and standard deviation of PSI column
+total_summary <- Suspension_Coil %>% summarize(Mean=mean(PSI),Median=median(PSI),
+                                               Variance=var(PSI), SD=sd(PSI))
+
+# Del_2.4: Create a dataframe to get mean, median, variance and standard deviation of PSI column by manuf. lot
+lot_summary <- Suspension_Coil %>% group_by(Suspension_Coil$Manufacturing_Lot) %>% 
+  summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI), SD=sd(PSI))
+
+# Create boxplot
+plt <- ggplot(Suspension_Coil, aes(x=Manufacturing_Lot, y=PSI)) #import dataset into ggplot2
+plt + geom_boxplot(fill="white", aes(color=Manufacturing_Lot)) + 
+  theme(axis.text.x=element_text(angle=45,hjust=1))  #add boxplot and rotate x-axis labels 45 degrees
+
+# ------------------------------------------------------------------------------------------------------------------
