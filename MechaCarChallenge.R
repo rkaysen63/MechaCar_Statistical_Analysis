@@ -50,3 +50,44 @@ plt + geom_boxplot(fill="white", aes(color=Manufacturing_Lot)) +
   theme(axis.text.x=element_text(angle=45,hjust=1))  #add boxplot and rotate x-axis labels 45 degrees
 
 # ------------------------------------------------------------------------------------------------------------------
+# Del_3.1: Determine if PSI across all manufacturing lots is statistically different from the
+# population mean of 1500 psi
+plt <- ggplot(Suspension_Coil, aes(x=(PSI))) # Import data into ggplot2
+plt + geom_density()+ # Visualize distribution using density plot
+  labs(x="PSI", y="Density") # add axis labels
+
+set.seed(50) # Sets random sample to make it repeatable
+sample_Suspension_Coil <- Suspension_Coil %>% sample_n(50)
+plt <- ggplot(sample_Suspension_Coil, aes(x=PSI)) # Import data into ggplot2
+plt + geom_density()+ # Visualize distribution using density plot
+  labs(x="PSI", y="Density") # add axis labels
+
+# t-test: H0 there is no statistical difference between the observed sample mean
+# and its presumed population mean
+t.test(sample_Suspension_Coil$PSI, Suspension_Coil$PSI)
+
+# Del_3.2: Determine if the PSI for each manufacturing lot is statiscally
+# different from the population mean of 1500 psi
+population1 <- subset(Suspension_Coil, Manufacturing_Lot == 'Lot1')
+
+plt <- ggplot(population1, aes(x=(PSI))) # Import data into ggplot2
+plt + geom_density()+ # Visualize distribution using density plot
+  labs(x="PSI", y="Density") # add axis labels
+
+t.test(population1$PSI, Suspension_Coil$PSI)
+# -------------------------------------------
+population2 <- subset(Suspension_Coil, Manufacturing_Lot == 'Lot2')
+
+plt <- ggplot(population2, aes(x=(PSI))) # Import data into ggplot2
+plt + geom_density()+ # Visualize distribution using density plot
+  labs(x="PSI", y="Density") # add axis labels
+
+t.test(population2$PSI, Suspension_Coil$PSI)
+# -------------------------------------------
+population3 <- subset(Suspension_Coil, Manufacturing_Lot == 'Lot3')
+
+plt <- ggplot(population3, aes(x=(PSI))) # Import data into ggplot2
+plt + geom_density()+ # Visualize distribution using density plot
+  labs(x="PSI", y="Density") # add axis labels
+
+t.test(population3$PSI, Suspension_Coil$PSI)
