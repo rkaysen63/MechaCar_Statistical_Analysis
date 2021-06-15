@@ -10,7 +10,7 @@
 * [Linear Regression to Predict MPG](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Linear-Regression-to-Predict-MPG)
 * [Summary Statistics on Suspension Coils](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Summary-Statistics-on-Suspension-Coils)
 * [T-Tests on Suspension Coils](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#T-Tests-on-Suspension-Coils)
-* [Study Design:  MechaCar vs Competition](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Study-Design---MechaCar-vs-Competition)
+* [Study Design:  MechaCar vs Competition](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#study-design)
 * [Summary](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#summary)
 
 ## Overview:
@@ -147,9 +147,7 @@ Comparison of the density graphs of the population and Lot2 population show that
 Comparison of the density graphs of the population and Lot3 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.1818 > 0.05 (5% significance level), we fail to reject the null.  The mean (Lot3) = 1496.14 is nearly the same as mean (population) = 1498.78.  
   
 
-## Study Design - MechaCar vs Competition
-
-<br/>    
+## Study Design: MechaCar vs Competition
 
 Before the final product version of MechaCar’s prototype is released to consumers, a statistical study comparing MechaCar to Competition could be performed in order to predict its success.
 
