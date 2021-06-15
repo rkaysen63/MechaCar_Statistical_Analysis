@@ -8,7 +8,7 @@
 * [Overview](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#overview)
 * [Resources](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#resources)
 * [Linear Regression to Predict MPG](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Linear-Regression-to-Predict-MPG)
-* [Summary Statistics on Suspension Coils](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Summary-Statistics-on-Suspension-Coils)
+* [Pressure Statistics on Suspension Coils](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Pressure-Statistics-on-Suspension-Coils)
 * [T-Tests on Suspension Coils](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#T-Tests-on-Suspension-Coils)
 * [Study Design:  MechaCar vs Competition](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#study-design-MechaCar-vs-Competition)
 * [Summary](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#summary)
@@ -63,7 +63,7 @@ Analysis of the production data of the MechaCar prototype is two-fold:
   <img src="images/Del_1/1_summary_model_gc.png" width="600"><br/>
 </p>
 
-## Summary Statistics on Suspension Coils
+## Pressure Statistics on Suspension Coils
 
 <p align="center">
   <a href="#">DataFrame:  Suspension_Coil</a>
@@ -157,16 +157,16 @@ Before the final product version of MechaCar’s prototype is released to consum
   * Safety: MechaCar’s Insurance Institute for Highway Safety’s (IIHS) are “A”, Acceptable, “G”, Good, “compared to Competion’s IIHS ratings
 
 * Hypothesis Statements:
-  * Cost 
-    H0:  MechaCar’s average cost per horsepower is less than Competition’s average cost per horsepower.  
+  * Cost <br/>
+    H0:  MechaCar’s average cost per horsepower is less than Competition’s average cost per horsepower.<br/>
     Ha:  MechaCar’s average cost per horsepower is not less than Competition’s average cost per horsepower.  
 
-  * Highway Fuel Efficiency
-    H0:  MechaCar’s average mile per gallon (highway) by weight is greater than Competition’s average mile per gallon by weight.
+  * Highway Fuel Efficiency<br/>
+    H0:  MechaCar’s average mile per gallon (highway) by weight is greater than Competition’s average mile per gallon by weight.<br/>
     Ha:  MechaCar’s average mile per gallon (highway) by weight is not greater than Competition’s average mile per gallon (highway) by weight.
 
-  * Safety – The IIHS has a number of criteria that are tested to determine top safety pick.
-    HO:  MechaCar’s IIHS ratings are greater than Competition’s IIHS ratings.
+  * Safety – The IIHS has a number of criteria that are tested to determine top safety pick.<br/>
+    HO:  MechaCar’s IIHS ratings are greater than Competition’s IIHS ratings.<br/>
     Ha:  MechaCar’s IIHS ratings are not greater than Competition’s IIHS ratings.
 
 * Statistical Testing:
