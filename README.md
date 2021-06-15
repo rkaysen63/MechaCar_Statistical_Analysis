@@ -46,10 +46,7 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
      
   It is evident from the model, that the slope for independent variables x1 (vehicle_length), x4 (ground_clearance), and x5 (AWD) are not zero, although there is no confidence that AWD is not random. The slopes of the independent variables, vehicle_length and ground_clearance, are positive indicating an improvement in mpg as vehicle_length increases and ground_clearance increases.
   
-* The summary statistics indicates that the linear regression model predicts mpg of MechaCar prototypes effectively. The r-squared value = 0.7149.  The square root of r-squared = 0.8455.  There is a 'strong' correlation when r is greater than or equal to 0.7.  In addition, the p-value = 5.35e-11, a value that is far below the significance level of 5%.  The model shows which independent variables impact mpg and those variables that do not correlate at all.<br/>
-  Since it was determined that vehicle-length and ground-clearance do impact mpg, their data was graphed for visualization and their summary statistics are provided as well.  The graphs of vehicle-length and ground-clearance data vs mpg suggests that mpg improves as these variables increase.  Their summary statistics have been provided as well.<br/>
-  The r<sub>vehicle length</sub> = 0.3715^-2 = 0.61.  The strength of the correlation is moderate.  The p-value for the vehicle-length model = 2.6e-06 which is far below significance level.<br/>
-  The r-value for the ground-clearance model = 0.1081^-2 = 0.33 indicates a correlation, albeit weak.  The p-value for the ground-clearance model = 0.01975 which is below the significance level for random variance of 5%.  
+* With summary statistics as an indicator, the linear regression model predicts mpg of MechaCar prototypes effectively. Since r<sup>2</sup> = 0.7149, r = 0.8455.  There is a 'strong' correlation when r is greater than or equal to 0.7.  In addition, p-value = 5.35e-11 is far below the significance level of 5%.  The model shows which independent variables impact mpg and those variables that do not correlate at all.<br/>
 
 <p align="center">
   <img src="images/Del_1/1_lm_model_vl.png" width="700"><br/>
@@ -61,8 +58,11 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
   <img src="images/Del_1/1_lm_model_gc.png" width="700"><br/>
   <br/>
   <img src="images/Del_1/1_summary_model_gc.png" width="600"><br/>
-</p>
-
+</p></br/>
+  Since vehicle length and ground clearance have been shown to impact mpg, their data was graphed for visualization and their summary statistics are provided as well.  The graphs of vehicle length vs mpg and ground-clearance vs mpg suggest that mpg improves as these variables increase.  Their summary statistics have been provided as well.<br/><br/>
+  r<sub>vehicle length</sub> = 0.3715^-2 = 0.61 indicates that the strength of the correlation is moderate.  The p-value<sub>vehicle length</sub> = 2.6e-06 is far below significance level.<br/><br/>
+  r<sub>ground clearance</sub> = 0.1081^-2 = 0.33 indicates that a correlation exists, albeit weak.  The p-value<sub>ground clearance</sub> = 0.01975 is below the significance level for random variance of 5%.</br/>
+  
 ## Pressure Statistics on Suspension Coils
 
 <p align="center">
