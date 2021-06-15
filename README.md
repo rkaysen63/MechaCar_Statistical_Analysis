@@ -15,7 +15,7 @@
 ## Overview:
 Analysis of the production data of the MechaCar prototype is two-fold:
 1. To identify which variables predict the mpg of the MechaCar prototypes, and
-2. Determine if suspension coils of the manufacturing lots are statistically different from the mean population.
+2. To determine if suspension coils of the manufacturing lots are statistically different from the mean population.
 
 ## Resources 
     
@@ -37,15 +37,19 @@ Analysis of the production data of the MechaCar prototype is two-fold:
   <img src="images/Del_1/1_MechaCar_MPG_analysis.png" width="800">
 </p>
 
+* In the summary output, each PR(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model.  By comparing the each PR(>|t|) value to a significance level of 0.05%, the intercept (PR(>|t|) = 5.08e-08), vehicle-length (PR(>|t|) = 2.60e-12), and ground-clearance(PR(>|t|) = 5.21e-08) have a significant impact on miles per gallon.  In other words, these variables/coefficients provide a non-random amount of variance to the linear model.  
 
+* The multiple linear regression model created for the MechaCar_MPG data set is:  
 
+     `y = 6.267x1 + 0.001245x2 + 0.06877x3 + 3.546x4 - 3.411x5 -104.0`
+     
+  It is evident by looking at the model, the slope for independent variables x1 (vehicle_length), x4 (ground_clearance), and x5 (AWD) are not zero, although there is no confidence that AWD is not random.
+  
+* The summary statistics indicates that the linear regression model predicts mpg of MechaCar prototypes effectively. The r-squared value = 0.7149.  The square root of r-squared = 0.8455.  There is a 'strong' correlation when r is greater than or equal to 0.7.  In addition, the p-value = 5.35e-11, which is far below the significance level of 5%.  The model shows which independent variables impact mpg and which don't really correlate at all.
 
-
-
-
-* Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-* Is the slope of the linear model considered to be zero? Why or why not?
-* Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+  Since it was determined that vehicle-length and ground-clearance do impact mpg, their data was graphed for visualization and their summary statistics are provided as well.  The graphs of vehicle-length and ground-clearance vs mpg indicates that mpg improves as these variables increase.  Their summary statistics have been provided as well.  
+  The r-value for the vehicle_length model = 0.3715^-2 = 0.61.  The strength of the correlation is moderate.  The p-value for the vehicle-length model = 2.6e-06 which is far below significance level.
+  The r-value for the ground-clearance model = 0.1081^-2 = 0.33 indicates a correlation, albeit weak.  The p-value for the ground-clearance model = 0.01975 which is below the significance level for random variance of 5%.  
 
 <p align="center">
   <img src="images/Del_1/1_lm_model_vl.png" width="700"><br/>
