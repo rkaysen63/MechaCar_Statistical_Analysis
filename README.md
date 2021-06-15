@@ -12,7 +12,7 @@
 * [T-Tests on Suspension Coils](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#T-Tests-on-Suspension-Coils)
 * [Study Design:  MechaCar vs Competition](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Study-Design---MechaCar-vs-Competition)
 * [Summary](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#summary)
-* 
+
 ## Overview:
 Analysis of the production data of the MechaCar prototype is two-fold:
 1. To identify which variables predict the mpg of the MechaCar prototypes, and
@@ -71,25 +71,27 @@ Analysis of the production data of the MechaCar prototype is two-fold:
   <img src="images/Del_2/2_Suspension_Coil.png" width="300">
 </p>
 
-
-* The suspension coil’s PSI continuous variable across all manufacturing lots
-
 <p align="center">
+  <a href="#">Suspension Coil Data: PSI Statistics - All Manufacturing Lots</a>
+  <br/><br/>  
   <img src="images/Del_2/2_total_summary.png" width="300">
 </p>
 
-* The following PSI metrics for each lot: mean, median, variance, and standard deviation.
 
 <p align="center">
+  <a href="#">Suspension Coil Data: PSI Statistics by Lot</a>
+  <br/><br/>    
   <img src="images/Del_2/2_lot_summary.png" width="600">
 </p>
 
+
 <p align="center">
+  <a href="#">Suspension Coil Data: Visualization of PSI Statistics by Lot</a>
+  <br/><br/>  
   <img src="images/Del_2/2_boxplot_lots.png" width="700">
 </p>
 
-
-* The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+* MechaCar's manufacturing variance across all lots is 62 pounds per square inch (psi) and well below its design specification that dictates that the variance of the suspension coils must not exceed 100 psi. The variance for Lot1 (0.98 psi) and Lot2 (7.5 psi) are very small and well below the design specification.  However, the variance of Lot3 data (170 psi) exceeds the 100 psi limit and does not meet the design specification.  The box plot shows a number of outliers for Lot3.
 
 ## T-Tests on Suspension Coils
 * t-test that compares all manufacturing lots against mean PSI of the population (5 pt)
@@ -97,10 +99,14 @@ Analysis of the production data of the MechaCar prototype is two-fold:
 * There is a summary of the t-test results across all manufacturing lots and for each lot (5 pt)
 
 <p align="center">
+  <a href="#">Suspension Coil Data: Population Density</a>
+  <br/><br/> 
   <img src="images/Del_3/3_population_density.png" width="600">
 </p>
   
 <p align="center">
+  <a href="#">Suspension Coil Data: Sample Population Density across all Lots</a>
+  <br/><br/> 
   <img src="images/Del_3/3_sample_density.png" width="600">
 </p>
   
@@ -108,6 +114,8 @@ Analysis of the production data of the MechaCar prototype is two-fold:
   <img src="images/Del_3/3_t.test_sample.png" width="600">
 
 <p align="center">
+  <a href="#">Suspension Coil Data: Lot1 Population Density</a>
+  <br/><br/> 
   <img src="images/Del_3/3_pop1_density.png" width="600">
 </p>
   
@@ -115,6 +123,8 @@ Analysis of the production data of the MechaCar prototype is two-fold:
   <img src="images/Del_3/3_t.test_Lot1.png" width="600">
   
 <p align="center">
+  <a href="#">Suspension Coil Data: Lot2 Population Density</a>
+  <br/><br/> 
   <img src="images/Del_3/3_pop2_density.png" width="600">
 </p>
   
@@ -122,6 +132,8 @@ Analysis of the production data of the MechaCar prototype is two-fold:
   <img src="images/Del_3/3_t.test_Lot2.png" width="600">
 
 <p align="center">
+  <a href="#">Suspension Coil Data: Lot3 Population Density</a>
+  <br/><br/> 
   <img src="images/Del_3/3_population_density.png" width="600">
 </p>
   
