@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 <p align="center">
-  <img src="images/Del_2/2_boxplot_lots.png" width="800">
+  <img src="images/Del_2/2_boxplot_lots.png" width="700">
 </p>
 
 ## Table of Contents
@@ -38,7 +38,7 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
   <img src="images/Del_1/1_MechaCar_MPG_analysis.png" width="800">
 </p>
 
-* In the summary output, the value of PR(>|t|) represents the probability that the coefficient contributes a random amount of variance to the linear model.  By comparing the each PR(>|t|) value to a significance level of 0.05%, the intercept (PR(>|t|) = 5.08e-08) and independent variables of vehicle-length (PR(>|t|) = 2.60e-12) and ground-clearance(PR(>|t|) = 5.21e-08), provide a non-random amount of variance to the linear model.  In other words, vehicle_length and ground_clearance do impact mpg.
+* In the summary output, the value of PR(>|t|) represents the probability that the coefficient contributes a random amount of variance to the linear model.  By comparing the each PR(>|t|) value to a significance level of 0.05%, the intercept `PR(>|t|) = 5.08e-08` and independent variables of vehicle-length `PR(>|t|) = 2.60e-12` and ground-clearance `PR(>|t|) = 5.21e-08`, provide a non-random amount of variance to the linear model.  In other words, vehicle_length and ground_clearance do impact mpg.
 
 * The multiple linear regression model created for the MechaCar_MPG data set is:  
 
@@ -91,7 +91,11 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
   <img src="images/Del_2/2_boxplot_lots.png" width="700">
 </p>
 
-* MechaCar's manufacturing variance across all lots is 62 pounds per square inch (psi) and well below its design specification that dictates that the variance (var) of the suspension coils must not exceed 100 psi. var<sub>Lot1</sub> = 0.98 psi is less than 1% of the design specification and var<sub>Lot2</sub> = 7.5 psi is less than 8% of the design specification.  var<sub>Lot3</sub> = 170 psi exceeds the design specification limit 100 psi limit.  The box plot shows that there are a number of outliers for Lot3.
+* MechaCar's manufacturing variance across all lots is 62 pounds per square inch (psi) and well below its design specification that dictates that the variance (var) of the suspension coils must not exceed 100 psi.<br/>
+* MechaCar's manufacturing variance by lot:
+  * var<sub>Lot1</sub> = 0.98 psi is less than 1% of the design specification.
+  * var<sub>Lot2</sub> = 7.5 psi is less than 8% of the design specification.
+  * var<sub>Lot3</sub> = 170 psi exceeds the design specification limit 100 psi limit.  The box plot shows that there are a number of outliers for Lot3.
 
 ## T-Tests on Suspension Coils
 
