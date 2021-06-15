@@ -91,7 +91,7 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
   <img src="images/Del_2/2_boxplot_lots.png" width="700">
 </p>
 
-* MechaCar's manufacturing variance across all lots is 62 pounds per square inch (psi) and well below its design specification that dictates that the variance of the suspension coils must not exceed 100 psi. The variance σ	\u03C3	&#963;	&sigma;	%u03C3	%CF%83 for Lot1 (0.98 psi) and Lot2 (7.5 psi) are very small and well below the design specification.  However, the variance of Lot3 data (170 psi) exceeds the 100 psi limit and does not meet the design specification.  The box plot shows a number of outliers for Lot3.
+* MechaCar's manufacturing variance across all lots is 62 pounds per square inch (psi) and well below its design specification that dictates that the variance (var) of the suspension coils must not exceed 100 psi. var<sub>Lot1</sub> = 0.98 psi is less than 1% of the design specification and var<sub>Lot2</sub> = 7.5 psi is less than 8% of the design specification.  var<sub>Lot3</sub> = 170 psi exceeds the design specification limit 100 psi limit.  The box plot shows that there are a number of outliers for Lot3.
 
 ## T-Tests on Suspension Coils
 
