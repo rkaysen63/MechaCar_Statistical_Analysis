@@ -132,7 +132,7 @@ Comparison of the density graphs of the population and Lot1 population show that
 <p align="center">
   <img src="images/Del_3/3_t.test_Lot2.png" width="600">
 
-Comparison of the density graphs of the population and Lot1 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.06026 > 0.05 (5% significance level), we fail to reject the null.  Sample estimates:  mean (Lot1) = 1500.20 is nearly the same as mean (population) = 1498.78.  
+Comparison of the density graphs of the population and Lot2 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.06026 > 0.05 (5% significance level), we fail to reject the null.  Sample estimates:  mean (Lot2) = 1500.20 is nearly the same as mean (population) = 1498.78.  
   
 <p align="center">
   <a href="#">Suspension Coil Data: Lot3 Population Density</a>
@@ -144,7 +144,7 @@ Comparison of the density graphs of the population and Lot1 population show that
   <img src="images/Del_3/3_t.test_Lot3.png" width="600">
 </p><br/>    
 
-Comparison of the density graphs of the population and Lot1 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.1818 > 0.05 (5% significance level), we fail to reject the null.  Sample estimates:  mean (Lot1) = 1496.14 is nearly the same as mean (population) = 1498.78.  
+Comparison of the density graphs of the population and Lot3 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.1818 > 0.05 (5% significance level), we fail to reject the null.  Sample estimates:  mean (Lot3) = 1496.14 is nearly the same as mean (population) = 1498.78.  
   
 
 ## Study Design - MechaCar vs Competition
