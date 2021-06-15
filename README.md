@@ -158,7 +158,7 @@ Before the final product version of MechaCar’s prototypes are released to cons
 * **Metrics:** 
   * Cost:  Mecha Car’s Average Cost/HP vs Competition’s Average Cost/HP
   * Highway Fuel Efficiency:  Mecha Car’s MPG/weight vs Competition’s MPG/weight
-  * Safety: The IIHS has a number of criteria that are tested to determine top safety pick.MechaCar’s Insurance Institute for Highway Safety’s (IIHS) are “A”, Acceptable, “G”, Good, “compared to Competion’s IIHS ratings
+  * Safety: The Insurance Institute for Highway Safety (IIHS) has a number of criteria that are tested to determine their top safety pick. IIHS ratings are “A” (Acceptable) “G” (Good), "M" (Marginal), P(Poor), Superior, Advanced, Basic.  MechaCar prototypes IIHS test ratings vs Competition's.
 
 * **Hypothesis Statements:**<br/>
   * Cost <br/>
