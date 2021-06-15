@@ -94,9 +94,6 @@ Analysis of the production data of the MechaCar prototype is two-fold:
 * MechaCar's manufacturing variance across all lots is 62 pounds per square inch (psi) and well below its design specification that dictates that the variance of the suspension coils must not exceed 100 psi. The variance for Lot1 (0.98 psi) and Lot2 (7.5 psi) are very small and well below the design specification.  However, the variance of Lot3 data (170 psi) exceeds the 100 psi limit and does not meet the design specification.  The box plot shows a number of outliers for Lot3.
 
 ## T-Tests on Suspension Coils
-* t-test that compares all manufacturing lots against mean PSI of the population (5 pt)
-* three t-tests that compare each manufacturing lot against mean PSI of the population (10 pt)
-* There is a summary of the t-test results across all manufacturing lots and for each lot (5 pt)
 
 <p align="center">
   <a href="#">Suspension Coil Data: Population Density</a>
@@ -109,10 +106,12 @@ Analysis of the production data of the MechaCar prototype is two-fold:
   <br/><br/> 
   <img src="images/Del_3/3_sample_density.png" width="600">
 </p>
-  
+
 <p align="center">
   <img src="images/Del_3/3_t.test_sample.png" width="600">
 
+* Comparison of the density graphs of the population and the sample population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.9675 > 0.05 (5% significance level), we fail to reject the null.  Sample estimates:  mean (sample) = 1498.82 is nearly the same as mean (population) = 1498.78.
+  
 <p align="center">
   <a href="#">Suspension Coil Data: Lot1 Population Density</a>
   <br/><br/> 
@@ -121,7 +120,9 @@ Analysis of the production data of the MechaCar prototype is two-fold:
   
 <p align="center">
   <img src="images/Del_3/3_t.test_Lot1.png" width="600">
-  
+
+Comparison of the density graphs of the population and Lot1 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.06613 > 0.05 (5% significance level), we fail to reject the null.  Sample estimates:  mean (Lot1) = 1500.00 is nearly the same as mean (population) = 1498.78.
+ 
 <p align="center">
   <a href="#">Suspension Coil Data: Lot2 Population Density</a>
   <br/><br/> 
@@ -131,6 +132,8 @@ Analysis of the production data of the MechaCar prototype is two-fold:
 <p align="center">
   <img src="images/Del_3/3_t.test_Lot2.png" width="600">
 
+Comparison of the density graphs of the population and Lot1 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.06026 > 0.05 (5% significance level), we fail to reject the null.  Sample estimates:  mean (Lot1) = 1500.20 is nearly the same as mean (population) = 1498.78.  
+  
 <p align="center">
   <a href="#">Suspension Coil Data: Lot3 Population Density</a>
   <br/><br/> 
@@ -140,6 +143,9 @@ Analysis of the production data of the MechaCar prototype is two-fold:
 <p align="center">
   <img src="images/Del_3/3_t.test_Lot3.png" width="600">
 </p><br/>    
+
+Comparison of the density graphs of the population and Lot1 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.1818 > 0.05 (5% significance level), we fail to reject the null.  Sample estimates:  mean (Lot1) = 1496.14 is nearly the same as mean (population) = 1498.78.  
+  
 
 ## Study Design - MechaCar vs Competition
 
@@ -177,8 +183,7 @@ Or as simpler test could assign the ratings a numerical value, G (Good)=3, A(Acc
 * Safety test data should include IIHS safety ratings for cars of similar class.
 
 ## Summary:
-Analysis of the production data of the MechaCar prototype is two-fold:
-1. To identify which variables predict the mpg of the MechaCar prototypes, and
-2. To determine if suspension coils of the manufacturing lots are statistically different from the mean population.
+1. The analysis shows that the independent variables that predict mpg of MechaCar prototypes are vehicle length and ground clearance.
+2. The suspension coil mean for each manufacturing lot is statistically the same mean population.
 
 [Back to the Table of Contents](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#table-of-contents)
