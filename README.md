@@ -7,10 +7,7 @@
 ## Table of Contents
 * [Overview](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#overview)
 * [Resources](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#resources)
-* [Linear Regression to Predict MPG](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Linear-Regression-to-Predict-MPG)
-* [Pressure Statistics on Suspension Coils](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#Pressure-Statistics-on-Suspension-Coils)
-* [T-Tests on Suspension Coils](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#T-Tests-on-Suspension-Coils)
-* [Study Design:  MechaCar vs Competition](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#study-design-MechaCar-vs-Competition)
+* [Results](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#results)
 * [Summary](https://github.com/rkaysen63/MechaCar_Statistical_Analysis/blob/master/README.md#summary)
 
 ## Overview:
@@ -18,8 +15,7 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
 1. To identify which variables predict the mpg of the MechaCar prototypes, and
 2. To determine if suspension coils of the manufacturing lots are statistically different from the mean population.
 
-## Resources 
-    
+## Resources:    
 * Data: MechaCar_mpg.csv, Suspension_Coil.csv
 * Tools: 
   * Programming Language: R
@@ -27,7 +23,9 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
   * R Libraries: jsonlite, tidyverse including dplyr, ggplot2
 * Lesson Plan: UTA-VIRT-DATA-PT-02-2021-U-B-TTH, Module 15 Challenge
 
-## Linear Regression to Predict MPG
+## Results:
+
+### Linear Regression to Predict MPG
 <p align="center">
   <a href="#">DataFrame:  MechaCar_MPG</a>
   <br/><br/>
@@ -63,7 +61,7 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
   r<sub>vehicle length</sub> = 0.3715^-2 = 0.61 indicates that the strength of the correlation is moderate.  The p-value<sub>vehicle length</sub> = 2.6e-06 is far below significance level.<br/><br/>
   r<sub>ground clearance</sub> = 0.1081^-2 = 0.33 indicates that a correlation exists, albeit weak.  The p-value<sub>ground clearance</sub> = 0.01975 is below the significance level for random variance of 5%.</br/>
   
-## Pressure Statistics on Suspension Coils
+### Summary Statistics on Suspension
 
 <p align="center">
   <a href="#">DataFrame:  Suspension_Coil</a>
@@ -97,7 +95,7 @@ Analysis of the production data of MechaCar's prototypes is two-fold:
   * var<sub>Lot2</sub> = 7.5 psi is less than 8% of the design specification.
   * var<sub>Lot3</sub> = 170 psi exceeds the design specification limit 100 psi limit.  The box plot shows that there are a number of outliers for Lot3.
 
-## T-Tests on Suspension Coils
+### T-Tests on Suspension Coils
 
 <p align="center">
   <a href="#">Suspension Coil Data: Population Density</a>
@@ -151,7 +149,7 @@ Comparison of the density graphs of the population and Lot2 population show that
 Comparison of the density graphs of the population and Lot3 population show that there is no statistical difference between the sample means.  A t-test further supports the null hypothesis, "H0: There is no statistical difference between the two observed sample means."  Since the p-value = 0.1818 > 0.05 (5% significance level), we fail to reject the null.  The mean<sub>Lot3</sub> = 1496.14 is nearly the same as mean<sub>population</sub> = 1498.78.  
   
 
-## Study Design-MechaCar vs Competition
+### Study Design: MechaCar vs Competition
 
 Before the final product version of MechaCar’s prototypes are released to consumers, a statistical study comparing MechaCar prototypes to Competition would be performed in order to predict its success.  Consumers will be interested in MechaCar’s performance, cost and safety.
 
